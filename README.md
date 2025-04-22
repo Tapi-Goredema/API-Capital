@@ -17,6 +17,8 @@ Response: {
   "utc_offset": "+02:00"
 }
 
+The cities in the API are Paris, Tokyo, London, Dehli
+
 Browsers by default will only use ports 80 or 443 if no port is specified. Since the Flask dev server runs on 5001, http://34.60.216.82 will refuse connection.
 
 Even if you manually enter http://34.60.216.82:5001/api/time?city=Paris, browsers don’t let you add custom headers via the URL bar, so you’ll get:
@@ -29,3 +31,5 @@ If you need to show results directly in a browser, you can temporarily disable t
 
 Then restart the app and visit in your browser:
 http://34.60.216.82:5001/api/time?city=Paris
+
+
